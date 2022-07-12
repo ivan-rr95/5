@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+			overflow-y: hidden;
+            
+        }
+        .enemigo{
+            width: 100px;
+            height: 100px;
+            /* border: 10px solid; */
+            background-image: url("http://assets.stickpng.com/images/5a0ac29f5a997e1c2cea10a1.png");
+            background-size: cover;
+            position: absolute;
+                top:0px;
+                left:0px;
+                display: none;
+            
+        }
+        .escenario{
+            border: 5px dotted;
+            height: 100%;
+            width:  100%;
+            
+            
+        }
+        img{
+            height: 100%;
+            width:  100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="escenario"> 
+        <img src="https://elordenmundial.com/wp-content/uploads/2017/01/ESPACIO.jpg" alt="">
+        <div id="plantilla_elemento" class="enemigo"></div>
+    </div>
+    <script src="src/elemento.js"></script>
+    <script src="src/nave.js"></script>
+    <script src="src/enemigo.js"></script>
+    <script src="src/juego.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
